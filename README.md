@@ -46,3 +46,11 @@ The project uses a publicly available House Prices dataset from Kaggle.
 - Regression algorithms
 - Model evaluation
 - Machine learning pipeline
+
+## Exploratory Data Analysis
+
+-An EDA report is generated using `ydata-profiling`.
+
+
+
+
