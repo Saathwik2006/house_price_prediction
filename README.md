@@ -1,3 +1,4 @@
+
 # House Price Prediction
 
 A machine learning project that predicts house prices based on property features such as area, number of bedrooms, location, and other attributes. The project includes data preprocessing, exploratory data analysis, feature engineering, model training, and performance evaluation.
