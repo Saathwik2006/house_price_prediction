@@ -13,6 +13,25 @@ A machine learning project that predicts house prices based on property features
 - Model training and evaluation
 - Performance comparison using multiple regression models
 
+## Features added
+-HouseAge = YrSold - YearBuilt
+-RemodeledAge = YrSold - YearRemodAdd
+-WasRemodeled = (YearRemodAdd != YearBuilt).astype(int)
+-GarageAge = YrSold - GarageYrBlt
+-HouseAge2 = HouseAge ** 2
+
+TotalSF = TotalBsmtSF + 1stFlrSF + 2ndFlrSF
+TotalPorchSF = OpenPorchSF + EnclosedPorch + 3SsnPorch + ScreenPorch
+TotalBathroom = FullBath + 0.5*HalfBath + BsmtFullBath + 0.5*BsmtHalfBath
+LivAreaPerRoom = GrLivArea / (TotRmsAbvGrd + 1)
+GarageArea_x_Cars = GarageArea * GarageCars
+
+2ndFlrRatio = 2ndFlrSF / (TotalSF + 1)
+QualxCond = OverallQual * OverallCond
+QualxArea = OverallQual * GrLivArea
+QualxAge = OverallQual * (HouseAge + 1)
+GarageQualArea = GarageCars * GarageArea
+
 ## Tech Stack
 
 - Python
@@ -26,7 +45,6 @@ A machine learning project that predicts house prices based on property features
 ## Models Used
 
 - Linear Regression
-- Decision Tree Regressor
 - Random Forest Regressor
 - XGBoost (optional)
 
